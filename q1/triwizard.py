@@ -80,6 +80,7 @@ def incendio(my_integer):
 # 'm': integer that divides n
 # return type: int numpy Ndarray; dim: nxn
 def alohomora(n, m):
+	
 	pass
 
 
