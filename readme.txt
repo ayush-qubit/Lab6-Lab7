@@ -1,10 +1,10 @@
 Ayush Sharma (203050029 / ayushsharma) (Github: ayush-qubit) -
-Vikrant Sharma (203050035 / vikrantsharma) (Github: Vikrant7981) - q2,q3
+Vikrant Sharma (203050035 / vikrantsharma) (Github: Vikrant7981) - q1(b),q2,q3
 Utkarsh Indolia (203050111 / utkarshindolia) (Github: utkarsh92) - q6
 Bharat Panwar (203050113 / nishkam) (GitHub: nishhhkam) -
 
+References:-
 
-References
 https://www.tutorialsteacher.com/python/os-module
 https://thispointer.com/python-how-to-copy-files-from-one-location-to-another-using-shutil-copy/
 https://pynative.com/python-sqlite-delete-from-table/
