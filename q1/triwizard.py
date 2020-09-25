@@ -111,14 +111,27 @@ def alohomora(n, m):
 # 'axis': str; axis ∈ {'X','Y','Z'}
 # return type: float Ndarray; dim: Nx3
 def expelliarmus(arr, theta, axis):
-	pass
+	arr=np.array(arr)
+	radian=np.radians(np.array(theta))
+	if axis=='X':
+		rotation_matrix=np.array([[1,0,0],[0,np.cos(radian),np.sin(radian)],[0,-np.sin(radian),np.cos(radian)]])
+	elif axis=='Y':
+		rotation_matrix=np.array([[np.cos(radian),0,np.sin(radian)],[0,1,0],[-np.sin(radian),0,np.cos(radian)]])
+	else:
+		rotation_matrix=np.array([[np.cos(radian),np.sin(radian),0],[-np.sin(radian),np.cos(radian),0],[0,0,1]])
+	rotated_matrix=np.dot(rotation_matrix,np.transpose(arr))
+	return np.round(np.transpose(rotated_matrix),decimals=2)
 
 
 # ---- Task (e) -------
 # 'arr': float Ndarray; dim: MxN
 # return type: float Ndarray; dim: MxN
+
 def crucio(arr):
-	pass
+	arr=np.array(arr)
+	arr=arr-arr.mean(axis=0)
+	arr=arr/arr.std(axis=0)
+	return np.round(arr,decimals=2)
 
 
 # ---- Task (f) -------
