@@ -140,7 +140,10 @@ def crucio(arr):
 # k: integer
 # return type: int 1-D array; dim: (n+k-1,)
 def leviosa(arr, k):
-	pass
+    arr = np.pad(arr, (0, k-1), 'constant')
+    arr = np.cumsum(arr)
+    arr[k:] = arr[k:] - arr[:-k]
+    return arr
 
 
 # ---- Task (g) -------
