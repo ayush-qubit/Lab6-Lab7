@@ -1,4 +1,4 @@
-Ayush Sharma (203050029 / ayushsharma) (Github: ayush-qubit) -
+Ayush Sharma (203050029 / ayushsharma) (Github: ayush-qubit) - q1(a,c,d,e,g)
 Vikrant Sharma (203050035 / vikrantsharma) (Github: Vikrant7981) - q1(b),q1(f),q2,q3
 Utkarsh Indolia (203050111 / utkarshindolia) (Github: utkarsh92) - q6
 Bharat Panwar (203050113 / nishkam) (GitHub: nishhhkam) -
