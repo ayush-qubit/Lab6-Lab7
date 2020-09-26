@@ -1,4 +1,5 @@
 import numpy as np
 
-arr=[2,3,4]
-print(np.cumsum(np.array(arr),axis=0))
+arr=np.array([1,2,3,4,5,6])
+x=np.where(arr%2==0)
+print(list(x))
