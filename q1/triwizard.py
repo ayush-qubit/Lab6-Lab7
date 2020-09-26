@@ -70,6 +70,7 @@ def incendio(my_integer):
 	base0 = np.square(base0)
 	# store the sum of all elements of base0 in ans
 	ans = np.sum(base0)
+	ans = np.around(ans, decimals=2)
 	# print ans
 	print("ans : {}".format(ans))
 
