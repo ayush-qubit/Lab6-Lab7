@@ -13,3 +13,4 @@ https://academic.mu.edu/phys/matthysd/web226/Lab01.htm
 https://matplotlib.org/3.3.1/tutorials/introductory/images.html
 https://numpy.org/doc/stable/reference/generated/numpy.cumsum.html
 https://numpy.org/doc/stable/reference/generated/numpy.pad.html
+https://stackoverflow.com/questions/12709853/python-running-cumulative-sum-with-a-given-window
