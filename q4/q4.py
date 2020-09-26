@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 from stackapi import StackAPI
 from functools import reduce
+def save_to_csv(csv_path):
+    pass
 if __name__ == "__main__":
-    words=input().split(sep=' ')
-    #tags=reduce(lambda x,y: x+' '+y,words)
-    tags='python and numpy'
+    tags=list(map(lambda x: x.lower(),input().split(sep=' ')))
+    print(tags)
     SITE=StackAPI('stackoverflow')
-    questions=SITE.fetch('questions',tagged=tags,max=20,sort='votes')
-    #print(questions)
+    questions=SITE.fetch('questions',tagged=tags,max=50,sort='votes')
     for ele in questions['items']:
-        print(ele['tags'])
+        if all(x in ele['tags'] for x in tags):
+            for ele2 in ele['owner']:
+                print(type(ele2))
