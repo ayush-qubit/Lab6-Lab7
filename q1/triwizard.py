@@ -147,4 +147,4 @@ def leviosa(arr, k):
 # k: integer
 # return type: n-D integer array; dim: (m,k)
 def accio(mat, k):
-	pass
+	return np.argsort(-1*mat,axis=1,kind='heap')[:,0:k]
