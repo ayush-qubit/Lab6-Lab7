@@ -3,8 +3,9 @@ from stackapi import StackAPI
 from bs4 import BeautifulSoup
 import requests
 
-def check_accepted_answer(d):
-    
+def check_accepted_answer(question_id,SITE):
+    answers=SITE.fetch('questions/' + str(question_id) + '/answers', order = 'desc', sort='votes')
+    print(answers['items'][0]['answer_id'])
     pass
 
 def save_to_csv(csv_path):
@@ -17,4 +18,6 @@ if __name__ == "__main__":
     questions=SITE.fetch('questions',tagged=tags,max=50,sort='votes')
     for ele in questions['items']:
         if all(x in ele['tags'] for x in tags):
+            check_accepted_answer(ele['question_id'],SITE)
+            input()
             pass
