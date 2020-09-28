@@ -14,3 +14,6 @@ https://matplotlib.org/3.3.1/tutorials/introductory/images.html
 https://numpy.org/doc/stable/reference/generated/numpy.cumsum.html
 https://numpy.org/doc/stable/reference/generated/numpy.pad.html
 https://stackoverflow.com/questions/12709853/python-running-cumulative-sum-with-a-given-window
+https://www.tutorialspoint.com/python/python_command_line_arguments.htm
+https://www.tutorialspoint.com/matplotlib/matplotlib_object_oriented_interface.htm
+https://www.tutorialspoint.com/python_pandas/python_pandas_groupby.htm
