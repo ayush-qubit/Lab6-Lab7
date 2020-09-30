@@ -3,12 +3,17 @@ import pandas as pd
 import matplotlib
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+import argparse
 import sys
 
 plt.rcParams['figure.figsize'] = (10.0, 5.0)
 
 # Reading Data
-data = pd.read_csv(sys.argv[2])
+parser=argparse.ArgumentParser()
+parser.add_argument('--data',required=True,help='Data file')
+args=vars(parser.parse_args())
+csv_path=args['data']
+data = pd.read_csv(csv_path)
 
 
 #Instance1
