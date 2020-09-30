@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from sqlite3 import Error
 
 ## NOTE :
-## 1. DO NOT CHANGE THE NAME OF ANY FUNCTION OR ANY ARGUMENT OR CLASS NAME. 
+## 1. DO NOT CHANGE THE NAME OF ANY FUNCTION OR ANY ARGUMENT OR CLASS NAME.
 ## 2. DO NOT CHANGE ANYTHING IN MAIN FUCNTION.
 ## 3. WRITE YOUR CODE INSIDE ### START CODE HERE ### and ### END CODE HERE ### ONLY
 ## 4. ANY DEVIATION IN THE NAMING CONVENTION, THE AUTOGRADER WILL MARK ZERO.
@@ -64,7 +64,10 @@ class CSE_Courses:
         for course_table_row in course_table_rows:
             course_list = []
             for td in course_table_row.find_all("td"):
-                course_list.append(td.text.replace('\n', ' ').strip())
+                if(len(td.contents)!=1):
+                    course_list.append(td.contents[0].strip())
+                else:
+                    course_list.append(td.text.replace('\n', ' ').strip())
             courses.append(course_list)
         ### END CODE HERE ###
         assert (isinstance(courses, list) and isinstance(courses[0], list))
